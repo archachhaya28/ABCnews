@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -44,7 +45,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    // json parser and object mapper library
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.12.3'
+    // image download library
     implementation 'com.github.bumptech.glide:glide:4.11.0'
 
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'

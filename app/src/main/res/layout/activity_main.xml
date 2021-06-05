@@ -39,22 +39,21 @@
         android:text="@string/no_network"/>
 
     <FrameLayout
-        android:layout_below="@id/noNetworkTextView"
         android:id="@+id/frameLayout"
+        android:layout_below="@id/noNetworkTextView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/grey100"
         android:paddingTop="15sp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/swipeRefreshLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <include layout="@layout/item_list" />
-
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/nav_host_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:navGraph="@navigation/nav_graph"
+                app:defaultNavHost="true" />
 
     </FrameLayout>
 

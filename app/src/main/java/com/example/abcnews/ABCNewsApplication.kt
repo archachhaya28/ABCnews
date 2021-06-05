@@ -13,7 +13,6 @@ class ABCNewsApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
-
         initServiceFinder()
     }
 

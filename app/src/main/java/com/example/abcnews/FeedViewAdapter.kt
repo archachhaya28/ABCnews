@@ -11,6 +11,7 @@ import com.google.android.material.imageview.ShapeableImageView
 
 class FeedViewAdapter(private val listener: ViewCallBack?): RecyclerView.Adapter<FeedViewAdapter.FeedViewHolder>() {
 
+    // this should be mutable since we are manipulating in List fragment.
     var itemList: MutableList<FeedItemViewModel> = mutableListOf()
 
     interface ViewCallBack {

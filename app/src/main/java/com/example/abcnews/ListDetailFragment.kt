@@ -1,7 +1,5 @@
 package com.example.abcnews
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,11 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
-import com.example.abcnews.network.Feed
 import com.example.abcnews.network.FeedItemViewModel
 import com.example.abcnews.network.Items
 import com.google.android.material.imageview.ShapeableImageView
-
 
 class ListDetailFragment: Fragment() {
 
@@ -53,6 +49,6 @@ class ListDetailFragment: Fragment() {
     }
 
     companion object {
-        const val ITEM_ID = "item_id"
+        const val ITEM_ID = "item"
     }
 }
